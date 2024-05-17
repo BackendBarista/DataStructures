@@ -1,12 +1,19 @@
 plugins {
-    id 'java'
+    // https://github.com/diffplug/spotless
+    id("com.diffplug.spotless") version "6.20.0"
 }
 
-group 'com.backendbarista'
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+group 'com.caffinatedutkarsh'
 version '1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
+
 }
 
 dependencies {
